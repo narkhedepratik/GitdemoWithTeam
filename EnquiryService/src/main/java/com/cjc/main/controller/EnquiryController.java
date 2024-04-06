@@ -33,4 +33,9 @@ public class EnquiryController {
 	{
 		System.out.println("Delete from tabale");
 	}
+	@GetMapping("/enquiry/{id}")
+	public void getEnquiryById()
+	{
+              System.out.println("Get Enquiry by id");
+	}	
 }
