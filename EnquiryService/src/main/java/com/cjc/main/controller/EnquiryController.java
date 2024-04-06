@@ -1,5 +1,6 @@
 package com.cjc.main.controller;
 
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import org.springframework.web.bind.annotation.PutMapping;
@@ -27,5 +28,9 @@ public class EnquiryController {
 	{
 		return "Data Post Successfully";
 	}
-
+	@DeleteMapping("/delete Api")
+	public void deleteAll()
+	{
+		System.out.println("Delete from tabale");
+	}
 }
